@@ -12,15 +12,20 @@
     <script src="<?= base_url('public/include/js/script.js') ?>"></script>
 
     <style>
-        /* styles.css */
+        
 
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 50px;
 }
+.button {
+  padding: 100;
+  font-size: 14px;
+  margin: 50px; /* Add margin to create spacing between buttons */
+}
+
 
 h1 {
     color: #333;
@@ -59,7 +64,7 @@ audio {
     background-color: #007bff;
     color: #fff;
 }
-
+  
     </style>
 </head>
 
@@ -108,7 +113,8 @@ audio {
         Upload Song
     </button>
 
-    <h1 id="currentTrackTitle"></h1>
+    <h1 id="playlist"></h1>
+
     <audio id="audio" controls autoplay type="audio/mpeg"></audio>
 
     <ul class="list-unstyled mt-3" id="playlist">
@@ -118,7 +124,7 @@ audio {
                     <?= $mus['title'] ?>
                 </a>
                 <button class="open-modal btn btn-primary" data-target="#mymodal" data-toggle="modal" data-music-id="<?= $mus['id'] ?>">
-                +   
+                   
                 </button>
                 
             </li>
