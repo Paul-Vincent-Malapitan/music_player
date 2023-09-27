@@ -14,6 +14,7 @@
     <style>
         /* styles.css */
 
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
